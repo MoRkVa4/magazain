@@ -15,7 +15,7 @@ class Migration(migrations.Migration):
             name='Brand',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(max_length=150, unique=True, verbose_name='Название Бренда')),
+                ('title', models.CharField(max_length=150, unique=True, verbose_name='Название бренда')),
                 ('slug', models.SlugField(blank=True, null=True, unique=True)),
             ],
             options={
@@ -27,7 +27,7 @@ class Migration(migrations.Migration):
             name='Category',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(max_length=150, unique=True, verbose_name='Название Категории')),
+                ('title', models.CharField(max_length=150, unique=True, verbose_name='Название категории')),
                 ('slug', models.SlugField(blank=True, null=True, unique=True)),
             ],
             options={
